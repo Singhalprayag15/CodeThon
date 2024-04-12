@@ -729,6 +729,11 @@
         loop: true,
       });
 
+	  AOS.init({
+        offset: 300,
+        duration: 1000,
+      });
+
       cross.addEventListener("click", () => {
         navItem.style.display = "none";
         hamburder.style.display = "inline";
@@ -764,12 +769,6 @@
         },
       });
 
-	
-
-	  AOS.init({
-        offset: 300,
-        duration: 1000,
-      });
     </script>
 
     
