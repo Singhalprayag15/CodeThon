@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Codethon-2024</title>
+		<!-- FONT AWESOME V6.1.1 -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
+		<link rel="icon" type="svg" href="./assets/images/logo.svg" />
+
+		<!-- swiper cdn -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<!-- Link Swiper's CSS -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+		<!-- aos css -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link href="/dist/output.css" rel="stylesheet" />
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="bg-black" id="body">
+		<!-- Navbar -->
+
+		<!-- Navbar Desktop -->
+		<nav class="w-[100%] md:hidden">
+			<div class="grid grid-cols-2 justify-between w-[90%] mx-auto py-3">
+				<div class="text-[#7DE7EB] font-extrabold cursor-pointer">
+					<img src="./assets/images/logo.svg" class="h-[2.2rem]" alt="logo" />
+				</div>
+				<div class="ml-auto active:text-[#7DE7EB]">
+					<i class="fas fa-align-right text-white" id="hamburger"></i>
+					<i class="fas fa-times my-auto hidden text-white" id="cross"></i>
+				</div>
+			</div>
+			<!-- Nav Items -->
+			<div class="py-3 hidden" id="navItem">
+				<ul class="ml-9 text-white">
+					<li class="nav_item">
+						<a href="#home" class="hover:text-[#7DE7EB] font-bold duration-300">Home</a>
+					</li>
+					<li class="nav_item">
+						<a href="#about" class="hover:text-[#7DE7EB] font-bold duration-300">About</a>
+					</li>
+					<li class="nav_item">
+						<a href="#feacture" class="hover:text-[#7DE7EB] font-bold duration-300">Features</a>
+					</li>
+					<li class="nav_item">
+						<a href="#solution" class="hover:text-[#7DE7EB] font-bold duration-300">Solution</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<!-- Navbar Desktop -->
+		<nav class="w-[100%] hidden md:inline-block" id="home">
+			<div class="grid grid-cols-2 justify-between w-[90%] mx-auto py-3 max-w-6xl">
+				<div class="text-[#7DE7EB] text-[1.5rem] font-extrabold my-auto cursor-pointer">
+					<img src="./assets/images/logo.svg" class="h-[2.5rem]" alt="logo" />
+				</div>
+				<!-- Nav Items -->
+				<div class="w-[90%] flex justify-end mx-auto py-3">
+					<ul class="grid grid-cols-4 justify-evenly text-white gap-14">
+						<li class="nav_item2">
+							<a href="#home" class="font-semibold hover:text-[#7DE7EB] duration-300">Home</a>
+						</li>
+						<li class="nav_item2">
+							<a href="#about" class="font-semibold hover:text-[#7DE7EB] duration-300">About</a>
+						</li>
+						<li class="nav_item2">
+							<a href="#feacture" class="font-semibold hover:text-[#7DE7EB] duration-300">Features</a>
+						</li>
+						<li class="nav_item2">
+							<a href="#solution" class="font-semibold hover:text-[#7DE7EB] duration-300">Solution</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Hero Section -->
+		<section class="heroSection w-full h-auto py-6 pb-5 md:py-20 flex justify-center relative">
+			<section class="w-full h-full max-w-6xl flex flex-col md:flex-row md:justify-between">
+				<section
+					class="leftSection pb-8 md:pb-0 w-full md:w-1/2 flex flex-col gap-4 md:gap-0 justify-start items-start p-4"
+				>
+					<div
+						class="p-4 text-gray-400 bg-hover-gradient text-sm md:text-base rounded-lg py-[4px] uppercase flex items-center gap-2"
+					>
+						<img src="./assets/images/Discount.png" alt="DISCOUNT" />
+						<p>
+							<span class="text-white">20%</span> DISCOUNT FOR
+							<span class="text-white"> 1 MONTH </span> ACCOUNT
+						</p>
+					</div>
+					<h1
+						class="text-3xl md:text-6xl mt-6 font-bold tracking-wide text-white w-full leading-10 md:leading-[72px]"
+					>
+						<span>The Next</span> <br />
+						<span class="gradientText" id="typedd">Generation</span>
+						<br />
+						<span>Payment Method.</span>
+					</h1>
+					<p class="text-gray-400 md:w-[75%] mt-8">
+						Our team of experts uses a methodology to identify the credit cards most likely to fit your
+						needs. We examine annual percentage rates, annual fees.
+					</p>
+				</section>
+
+				<a href="#testimonial" class="hidden md:block absolute top-[24%] left-[46%]">
+					<img
+						class="w-24 home_img shadow-[2px_2px_22px_-2px_gray] rounded-full cursor-pointer"
+						src="./assets/images/getStartImg.png"
+						alt="GETSTARTED"
+					/>
+				</a>
+				<section
+					class="rightSection w-full md:w-[44%] flex gap-5 gap-y-3 flex-col p-4 py-6 md:py-0 my-auto mt-3"
+				>
+					<div class="w-[96%] md:w-full mx-auto relative md:static">
+						<img
+							class="md:absolute md:right-0 md:w-[45vw] md:top-3 h-full relative"
+							src="./assets/images/1.png"
+							alt=""
+						/>
+						<img class="absolute top-0 md:static" src="./assets/images/shade1.png" alt="SHADES" />
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<!-- section-two -->
+		<section class="w-full mt-10 flex justify-center">
+			<section class="w-full max-w-6xl flex flex-col gap-y-2 md:flex-row md:justify-between p-4 text-center">
+				<div class="mt-8 md:w-[30%] lg:flex lg:items-center">
+					<h1 class="text-white font-bold text-2xl md:text-4xl">3800+</h1>
+					<p class="text-[#7DE7EB] lg:mx-4 relative top-1">User Active</p>
+				</div>
+
+				<div class="mt-8 md:w-[30%] lg:flex lg:items-center">
+					<h1 class="text-white font-bold text-2xl md:text-4xl">230+</h1>
+					<p class="text-[#7DE7EB] lg:mx-4 relative top-1">TRUSTED BY COMPANY</p>
+				</div>
+
+				<div class="mt-8 md:w-[30%] lg:flex lg:items-center">
+					<h1 class="text-white font-bold text-2xl md:text-4xl">$230M+</h1>
+					<p class="text-[#7DE7EB] lg:mx-4 relative top-1">TRANSACTION</p>
+				</div>
+			</section>
+		</section>
+
+		<section id="about" class="getSection w-full h-auto py-20 pt-8 pb-5 md:py-20 flex justify-center">
+			<section class="w-full h-full max-w-6xl flex flex-col md:flex-row md:justify-between">
+				<section
+					data-aos-duration="2000"
+					data-aos="fade-up-right"
+					class="leftSection pb-8 md:pb-0 w-full md:w-1/2 flex flex-col gap-4 md:gap-8 justify-start items-start p-4"
+				>
+					<h1
+						class="text-3xl md:text-4xl font-bold tracking-wide text-white w-full md:w-4/5 leading-10 md:leading-[56px]"
+					>
+						You do the business, we’ll handle the money.
+					</h1>
+					<p class="text-gray-400">
+						With the right credit card, you can improve your financial life by building credit, earning
+						rewards and saving money. But with hundreds of credit cards on the market.
+					</p>
+
+					<button
+						class="rounded-lg px-8 py-3 button-bg font-medium mt-3 active:scale-75 hover:scale-110 duration-500"
+					>
+						Get Started
+					</button>
+				</section>
+				<section
+					data-aos-duration="2000"
+					data-aos="fade-up-left"
+					class="rightSection w-full md:w-[44%] flex gap-5 gap-y-3 flex-col p-4 py-6 md:py-0 my-auto mt-3"
+				>
+					<section class="single1 flex gap-4 items-center p-4 rounded-xl">
+						<img class="w-[4.5rem] h-[4.5rem]" src="./assets/images/get1.png" alt="" />
+
+						<section class="flex flex-col gap-1">
+							<p class="font-semibold text-white">Rewards</p>
+							<p class="text-gray-400">
+								The best credit cards offer some tantalizing combinations of promotions and prizes
+							</p>
+						</section>
+					</section>
+					<section class="single2 flex gap-4 items-center bg-hover-gradient p-4 rounded-xl">
+						<img class="w-[4.5rem] h-[4.5rem]" src="./assets/images/get2.png" alt="" />
+
+						<section class="flex flex-col gap-1">
+							<p class="font-semibold text-white">100% Secured</p>
+							<p class="text-gray-400">
+								We take proactive steps make sure your information and transactions are secure.
+							</p>
+						</section>
+					</section>
+					<section class="single3 flex gap-4 items-center p-4 rounded-xl">
+						<img class="w-[4.5rem] h-[4.5rem]" src="./assets/images/get3.png" alt="" />
+
+						<section class="flex flex-col gap-1">
+							<p class="font-semibold text-white">Balance Transfer</p>
+							<p class="text-gray-400">
+								A balance transfer credit card can save you a lot of money in interest charges.
+							</p>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<section id="feacture" class="playStoreSection w-full h-auto py-8 pt-6 md:pt-14 flex justify-center">
+			<section class="w-full h-full max-w-6xl flex flex-col md:flex-row md:justify-between">
+				<section
+					data-aos-duration="2000"
+					data-aos="fade-up-right"
+					class="leftSection pb-8 md:pb-0 w-full md:w-1/2 flex flex-col gap-4 md:gap-8 justify-start items-start p-4"
+				>
+					<div class="w-[96%] md:w-full mx-auto">
+						<img src="./assets/images/playStore.png" alt="" />
+					</div>
+				</section>
+				<section
+					data-aos-duration="2000"
+					data-aos="fade-up-left"
+					class="rightSection md:py-20 pb-8 md:pb-0 w-full md:w-[44%] flex flex-col gap-6 justify-start items-start p-4"
+				>
+					<h1
+						class="text-3xl md:text-4xl font-bold tracking-wide text-white w-full leading-10 md:leading-[56px]"
+					>
+						Easily control your billing & invoicing.
+					</h1>
+					<p class="text-gray-400">
+						Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio aenean neque. Fusce ipsum orci
+						rhoncus aliporttitor integer platea placerat.
+					</p>
+
+					<section class="flex gap-5 items-center mt-2">
+						<img src="./assets/images/play1.svg" alt="DOWNLOAD" />
+						<img src="./assets/images/play2.svg" alt="DOWNLOAD" />
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<section id="solution" class="findSection w-full h-auto py-20 pb-5 md:py-20 flex justify-center">
+			<section class="w-full h-full max-w-6xl flex flex-col md:flex-row md:justify-between">
+				<section
+					data-aos-duration="2000"
+					data-aos="fade-up-right"
+					class="leftSection md:py-12 pb-8 md:pb-0 w-full md:w-1/2 flex flex-col md:gap-6 justify-start items-start p-4"
+				>
+					<h1
+						class="text-3xl md:text-4xl font-bold tracking-wide text-white w-full md:w-4/5 leading-10 md:leading-[56px]"
+					>
+						Find a better card deal in few easy steps.
+					</h1>
+					<p class="text-gray-400">
+						Arcu tortor, purus in mattis at sed integer faucibus. Aliquet quis aliquet eget mauris tortor.ç
+						Aliquet ultrices ac, ametau.
+					</p>
+
+					<button
+						class="rounded-lg px-8 py-3 button-bg font-medium mt-3 active:scale-75 hover:scale-110 duration-500"
+					>
+						Get Started
+					</button>
+				</section>
+				<section
+					data-aos-duration="2000"
+					data-aos="fade-up-left"
+					class="rightSection w-full md:w-[44%] flex gap-5 gap-y-3 flex-col p-4 py-6 md:py-0 my-auto mt-3"
+				>
+					<div class="w-[90%] md:w-full mx-auto relative flex justify-end">
+						<!-- <img src="./assets/images/find.png" alt="" /> -->
+
+						<div class="relative top-0 z-50 flex justify-center items-center">
+							<img class="z-10 animate-spin w-[86%]" src="./assets/images/e1.png" alt="" />
+							<img class="z-10 animate-spin absolute w-[63%]" src="./assets/images/e2.png" alt="" />
+							<img class="z-10 animate-spin absolute" src="./assets/images/e3.png" alt="" />
+
+							<img
+								class="absolute w-[46%] z-20 left-0 md:-left-3 rounded-2xl top-16 shadow-2xl shadow-gray-600/40"
+								src="./assets/images/anim2.png"
+								alt=""
+							/>
+							<img
+								class="absolute w-[46%] z-20 right-0 md:-right-3 top-5 rounded-2xl shadow-2xl shadow-gray-600/40"
+								src="./assets/images/anim3.png"
+								alt=""
+							/>
+							<img
+								class="absolute w-[50%] z-20 -bottom-4 rounded-2xl shadow-2xl shadow-gray-600/40"
+								src="./assets/images/anim4.png"
+								alt=""
+							/>
+						</div>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<section
+			data-aos="zoom-out-up"
+			data-aos-duration="2000"
+			id="testimonial"
+			class="testimonialSection w-full h-auto py-20 pb-5 md:py-8 flex justify-center"
+		>
+			<section class="w-full h-full max-w-6xl flex flex-col">
+				<section class="w-full py-5 flex flex-col md:flex-row justify-between items-center p-4">
+					<p
+						class="text-3xl md:text-4xl font-bold tracking-wide text-white w-full md:w-[38%] leading-10 md:leading-[56px]"
+					>
+						What people are saying about us
+					</p>
+					<p class="text-gray-400 w-full md:w-[38%] mt-4 md:mt-0">
+						Everything you need to accept card payments and grow your business anywhere on the planet.
+					</p>
+				</section>
+
+				<section class="w-full flex flex-col md:flex-row flex-wrap justify-between mt-10 p-4">
+					<section
+						class="singleTestimonial1 md:w-[30%] flex flex-col gap-2 p-6 py-12 rounded-2xl bg-hover-gradient"
+					>
+						<img class="w-10" src="./assets/images/aboutIcon.svg" alt="" />
+						<p class="text-white/90 mt-7">
+							Money is only a tool. It will take you wherever you wish, but it will not replace you as the
+							driver.
+						</p>
+
+						<section class="flex gap-4 items-center mt-4">
+							<img src="./assets/images/person1.png" alt="" />
+							<section>
+								<p class="text-white font-semibold">Herman Jensen</p>
+								<p class="text-gray-400">Founder & Leader</p>
+							</section>
+						</section>
+					</section>
+
+					<section class="singleTestimonial2 md:w-[30%] flex flex-col gap-2 p-6 py-12 rounded-2xl">
+						<img class="w-10" src="./assets/images/aboutIcon.svg" alt="" />
+						<p class="text-white/90 mt-7">
+							Money makes your life easier. If you're lucky to have it, you're lucky.
+						</p>
+
+						<section class="flex gap-4 items-center mt-4">
+							<img src="./assets/images/person2.png" alt="" />
+							<section>
+								<p class="text-white font-semibold">Steve Mark</p>
+								<p class="text-gray-400">Founder & Leader</p>
+							</section>
+						</section>
+					</section>
+					<section class="singleTestimonial3 md:w-[30%] flex flex-col gap-2 p-6 py-12 rounded-2xl">
+						<img class="w-10" src="./assets/images/aboutIcon.svg" alt="" />
+						<p class="text-white/90 mt-7">
+							It is usually people in the money business, finance, and international trade that are really
+							rich.
+						</p>
+
+						<section class="flex gap-4 items-center mt-4">
+							<img src="./assets/images/person3.png" alt="" />
+							<section>
+								<p class="text-white font-semibold">Kenn Gallagher</p>
+								<p class="text-gray-400">Founder & Leader</p>
+							</section>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+
+		<section class="partnerSection w-full h-auto py-2 pb-5 md:py-8 flex justify-center">
+			<section class="w-full h-full max-w-6xl flex justify-center">
+				<section
+					class="w-full md:w-[94%] relative md:left-1 gap-y-6 ml-4 grid grid-cols-2 p-4 md:grid-cols-4 justify-between"
+				>
+					<img class="w-32 md:w-40 h-9 md:h-11" src="./assets/images/partner1.png" alt="PARTNERS" />
+					<img class="w-32 md:w-40 h-8 md:h-10" src="./assets/images/partner2.png" alt="PARTNERS" />
+					<img class="w-30 md:w-36 h-7 md:h-8" src="./assets/images/partner3.png" alt="PARTNERS" />
+					<img class="w-32 md:w-40 h-8 md:h-10" src="./assets/images/partner4.png" alt="PARTNERS" />
+				</section>
+			</section>
+		</section>
+
+		<section class="letsTrySection w-full h-auto py-20 pb-5 md:py-8 flex justify-center">
+			<section class="w-full h-full max-w-6xl flex flex-col p-4">
+				<section
+					class="w-full flex flex-col md:flex-row justify-between items-center bg-hover-gradient p-8 md:p-14 rounded-xl"
+				>
+					<section class="flex flex-col gap-4">
+						<h1
+							class="text-3xl md:text-4xl font-bold tracking-wide text-white w-full md:w-4/5 leading-10 md:leading-[56px]"
+						>
+							Let’s try our service now!
+						</h1>
+						<p class="text-gray-400 w-full md:w-[60%]">
+							Everything you need to accept card payments and grow your business anywhere on the planet.
+						</p>
+					</section>
+					<div class="h-fit w-full mt-6 md:mt-0 flex justify-start md:w-fit">
+						<button
+							class="rounded-lg px-8 py-3 button-bg font-medium mt-3 active:scale-75 hover:scale-110 duration-500"
+						>
+							Get Started
+						</button>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<!-- contact section -->
+		<!-- main div -->
+		<div id="contact" class="mt-8 flex justify-center">
+			<section class="max-w-6xl w-full">
+				<section class="p-6 text-white md:flex md:justify-between w-full">
+					<!-- inner section-1 -->
+					<div class="mt-6 md:w-[20%]">
+						<img src="./assets/images/logo.svg" class="w-3/5 md:w-4/5" alt="./Images/logo.svg" />
+						<p class="mt-4 text-gray-400">A new way to make the payments easy, reliable and secure.</p>
+					</div>
+
+					<section class="flex-col md:flex-row flex justify-between w-full md:w-3/5">
+						<!-- inner section-2 -->
+						<div class="mt-6 md:w-[20%]">
+							<h3 class="font-bold text-xl">Usefull Links</h3>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Content</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">How it Works</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Create</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Explore</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">
+								Terms & Services
+							</p>
+						</div>
+
+						<!-- inner section-3 -->
+						<div class="mt-6 md:w-[20%]">
+							<h3 class="font-bold text-xl">Community</h3>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Help Center</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Partners</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Suggestions</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Explore</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Newsletters</p>
+						</div>
+
+						<!-- inner section-4 -->
+						<div class="mt-6 md:w-[20%]">
+							<h3 class="font-bold text-xl">Partner</h3>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">Our Partner</p>
+							<p class="mt-3 lg:cursor-pointer nav_item2 text-gray-400 hover:text-white">
+								Become a Partner
+							</p>
+						</div>
+					</section>
+				</section>
+
+				<hr class="text-white w-[96%] m-auto my-4 mb-0" />
+
+				<!-- last section -->
+				<section class="p-6 md:flex md:justify-between lg:w-[94%] lg:m-auto md:items-center">
+					<p class="text-white md:mt-3">
+						Copyright <i class="fa-regular fa-copyright"></i> 2021 HooBank. All Rights Reserved.
+					</p>
+
+					<!-- icons div -->
+					<div class="flex items-center justify-start mt-4">
+						<i
+							class="fa-brands mr-2 text-white text-xl fa-instagram cursor-pointer hover:scale-110 hover:text-[#7DE7EB] duration-500"
+						></i>
+						<i
+							class="fa-brands mx-3 text-white text-xl fa-facebook cursor-pointer hover:scale-110 hover:text-[#7DE7EB] duration-500"
+						></i>
+						<i
+							class="fa-brands mx-3 text-white text-xl fa-twitter cursor-pointer hover:scale-110 hover:text-[#7DE7EB] duration-500"
+						></i>
+						<i
+							class="fa-brands mx-3 text-white text-xl fa-linkedin cursor-pointer hover:scale-110 hover:text-[#7DE7EB] duration-500"
+						></i>
+					</div>
+				</section>
+			</section>
+		</div>
+
+		<!-- On Top -->
+		<div class="fixed bottom-[2rem] right-5 home_img cursor-pointer">
+			<a href="#body">
+				<i
+					class="far fa-hand-point-up text-[1.3rem] text-[#7DE7EB] bg-black border-2 border-[#7DE7EB] p-2 rounded-full active:scale-90"
+				></i>
+			</a>
+		</div>
+
+		<!-- aos js link -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="./script.js"></script>
+		<!-- swiper js link -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- typed js -->
+		<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+		<script>
+			var swiper = new Swiper(".mySwiper", {
+				spaceBetween: 20,
+				centeredSlides: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+		</script>
+
+		<script>
+			var typed = new Typed("#typedd", {
+				strings: ["Generation"],
+				smartBackspace: true,
+				backDelay: 400,
+				fadeOut: true,
+				fadeOutClass: "typed-fade-in",
+				fadeOutDelay: 500,
+				startDelay: 500,
+				typeSpeed: 100,
+				backSpeed: 100,
+				loop: true,
+			});
+		</script>
+
+		<script>
+			AOS.init({
+				offset: 300,
+				duration: 1000,
+			});
+		</script>
+	</body>
+</html>

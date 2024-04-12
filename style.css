@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* .swiper-button-next{
+color: white;
+}
+
+.swiper-button-prev{
+color:white;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000 !important;
+} */
+
+html {
+	scroll-behavior: smooth !important;
+}
+
+body {
+	margin: 0%;
+	padding: 0%;
+	width: 100vw;
+	overflow-x: hidden !important;
+}
+
+.button-bg {
+	background: rgb(158, 237, 240);
+	background: linear-gradient(156deg, rgba(158, 237, 240, 1) 0%, rgba(56, 191, 209, 1) 100%);
+}
+
+.bg-hover-gradient {
+	background: rgb(52, 50, 61);
+	background: linear-gradient(175deg, rgba(52, 50, 61, 1) 0%, rgba(22, 17, 30, 1) 100%);
+}
+
+/* Nav Li */
+.nav_item {
+	position: relative;
+	font-weight: 600;
+	margin: 5px 0px;
+}
+
+.nav_item::before {
+	content: "";
+	height: 2px;
+	background-color: #7de7eb;
+	position: absolute;
+	color: #7de7eb;
+	top: 1.7rem;
+	left: 1px;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	transition: width 0.5s linear;
+}
+
+.nav_item:hover::before {
+	width: 10%;
+}
+
+/* Desktop */
+.nav_item2 {
+	position: relative;
+	font-weight: 600;
+	margin: 5px 0px;
+}
+
+.nav_item2::before {
+	content: "";
+	height: 2px;
+	background-color: #7de7eb;
+	position: absolute;
+	color: #7de7eb;
+	top: 1.7rem;
+	left: 1px;
+	right: 0;
+	bottom: 0;
+	width: 0;
+	transition: width 0.5s linear;
+}
+
+.nav_item2:hover::before {
+	width: 40%;
+}
+
+.gradientText {
+	background: #53c8dd;
+	background: linear-gradient(to right, #119bb4 0%, #d9f5f3 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes scale_UP {
+	0% {
+		transform: scale(1);
+	}
+	100% {
+		transform: scale(1.2);
+	}
+}
+
+.home_img {
+	animation-name: scale_UP;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
